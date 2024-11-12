@@ -132,7 +132,7 @@ npm run dev
 npm run tauri dev
 ```
 
-![front server](img/tauri/my-tauri-app 2024-11-12.png)
+![front server](img/tauri/241112/my-tauri-app 2024-11-12.png)
 ![tauri app](img/tauri/241112/esbuild 2024-11-12.png)
 
 ## Common Issues and Solutions
