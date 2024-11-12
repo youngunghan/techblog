@@ -132,6 +132,9 @@ npm run dev
 npm run tauri dev
 ```
 
+![front server](img/tauri/my-tauri-app 2024-11-12.png)
+![tauri app](img/tauri/241112/esbuild 2024-11-12.png)
+
 ## Common Issues and Solutions
 
 ### 1. "cargo not found" Error
@@ -209,7 +212,3 @@ chmod +x src-tauri/target/release/my-tauri-app
 
 Following this guide step by step will help you set up a Tauri project successfully. Remember to check the terminal output for any errors and refer to the troubleshooting section if needed.
 
-Sources
-[1] image.jpg https://pplx-res.cloudinary.com/image/upload/v1730805589/user_uploads/fwilbizxc/image.jpg
-[2] image.jpg https://pplx-res.cloudinary.com/image/upload/v1731221052/user_uploads/nddushqmy/image.jpg
-[3] image.jpg https://pplx-res.cloudinary.com/image/upload/v1731366654/user_uploads/mbucoaulf/image.jpg
