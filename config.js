@@ -16,7 +16,7 @@ const users = [
     username: "seoultech",
     company: "SNU",
     position: "CEO",
-    img: "img/user/profile-licat.png",
+    img: "img/user/profile.jpeg",
   },
 ];
 
