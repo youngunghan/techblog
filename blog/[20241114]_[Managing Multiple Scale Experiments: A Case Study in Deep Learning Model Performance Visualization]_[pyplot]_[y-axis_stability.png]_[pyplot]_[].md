@@ -114,9 +114,3 @@ Proper data handling and visualization techniques are crucial when working with 
 - Performance trend analysis
 
 ---
-
-This structure provides a comprehensive overview of your project while maintaining professional documentation standards suitable for a GitHub blog post.
-
-Citations:
-[1] https://pplx-res.cloudinary.com/image/upload/v1731574941/user_uploads/vjmoubcyt/image.jpg
-[2] https://pplx-res.cloudinary.com/image/upload/v1731570209/user_uploads/jlvriskfl/seukeurinsyas-2024-11-14-152409.jpg
