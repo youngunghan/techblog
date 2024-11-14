@@ -2,7 +2,7 @@
 
 ## Project Introduction
 
-A service that allows you to easily create a blog using GitHub Pages. You can create your own blog by forking the repository to your own account[2].
+A service that allows you to easily create a blog using GitHub Pages. You can create your own blog by forking the repository to your own account.
 
 ## Development Information
 
@@ -69,7 +69,3 @@ To manage the menu in the upper right:
 | JS | URLparsing.js | extractFromUrl() | url, pathParts, isLocal | URL parsing, schema verification |
 | JS | render.js | renderBlogPosts(), renderMenu() | | Renders data to DOM |
 | JS | initData.js | initDataBlogList(), initDataBlogMenu() | blogList, blogMenu | Initial data loading, schema verification |
-
-Citations:
-[1] https://github.com/youngunghan/techblog
-[2] https://github.com/youngunghan/techblog
