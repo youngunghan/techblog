@@ -1,4 +1,4 @@
-# Managing Multiple Scale Experiments: A Case Study in Deep Learning Model Performance Visualization
+# Fixing Unstable Y-axis Range in Matplotlib Multi-scale Data Visualization
 
 ## Introduction
 
