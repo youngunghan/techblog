@@ -1,5 +1,3 @@
-Yes, the format is suitable for a GitHub blog post. Here's a suggested structure for your technical blog post in English:
-
 # Managing Multiple Scale Experiments: A Case Study in Deep Learning Model Performance Visualization
 
 ## Introduction
