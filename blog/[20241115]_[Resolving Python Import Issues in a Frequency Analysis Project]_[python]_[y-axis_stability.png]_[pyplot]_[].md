@@ -1,113 +1,100 @@
-# Resolving Python Import Issues in a Frequency Analysis Project
+# Resolving Python Import Issues: A Practical Guide
 
 ## Project Structure
 
 ```
-FREQUENCY-FORENSICS/
+vision-ml-project/
 ├── src/
-│   └── freqdect/
+│   └── vision_utils/
 │       ├── __init__.py
-│       ├── baselines/
-│       ├── corruption.py
-│       ├── data_loader.py
-│       ├── fourier_math.py
-│       ├── models.py
-│       ├── prepare_dataset.py
-│       ├── wavelet_math.py
-│       └── ...
+│       ├── preprocessing/
+│       │   ├── __init__.py
+│       │   ├── augmentation.py
+│       │   └── transforms.py
+│       ├── models/
+│       │   ├── __init__.py
+│       │   └── network.py
+│       └── train.py
 ├── tests/
 ├── setup.py
-├── environment.yml
 └── README.md
 ```
 
 ## The Challenge
 
-When executing the prepare_dataset.py script directly:
+When trying to run the training script directly:
 
 ```bash
-python /path/to/src/freqdect/prepare_dataset.py --data-dir /path/to/data
+python /path/to/vision-ml-project/src/vision_utils/train.py --data-dir /path/to/dataset
 ```
 
-We encounter:
+We encounter this error:
 ```python
 Traceback (most recent call last):
-  File "prepare_dataset.py", line 3, in <module>
-    from freqdect.corruption import process_data
-ModuleNotFoundError: No module named 'freqdect'
+  File "train.py", line 3, in <module>
+    from vision_utils.preprocessing import transforms
+ModuleNotFoundError: No module named 'vision_utils'
 ```
 
 ## Root Cause Analysis
 
-The error occurs because:
-- Python cannot locate the `freqdect` package in its module search path
-- The script is being executed directly without proper package context
-- The `src` directory is not in Python's module search path
+**Python's Module Search Behavior:**
+- Python first looks in the directory containing the executed script
+- Then searches through PYTHONPATH directories
+- Finally checks installed packages
+
+When running the script directly, Python cannot find the `vision_utils` package because the `src` directory is not in its search path.
 
 ## Solution Implementation
 
-### Method 1: Environment Setup
+### Method 1: Using PYTHONPATH
 ```bash
-export PYTHONPATH="/path/to/FREQUENCY-FORENSICS/src:$PYTHONPATH"
-python src/freqdect/prepare_dataset.py --data-dir /path/to/data
+export PYTHONPATH="/path/to/vision-ml-project/src:$PYTHONPATH"
+python src/vision_utils/train.py --data-dir /path/to/dataset
 ```
 
-### Method 2: Module Execution
+### Method 2: Module-style Execution
 ```bash
-cd FREQUENCY-FORENSICS
-python -m freqdect.prepare_dataset --data-dir /path/to/data
+python -m vision_utils.train --data-dir /path/to/dataset
 ```
 
 ### Method 3: Development Installation
 ```bash
+# From project root
 pip install -e .
 ```
 
 ## Best Practices
 
-1. **Project Organization**
-   - Maintain clear package hierarchy
-   - Keep all source code under `src/freqdect`
-   - Use proper `__init__.py` files
+1. **Project Structure**
+   - Keep all source code under `src/`
+   - Use meaningful package names
+   - Include `__init__.py` files
 
-2. **Import Conventions**
+2. **Import Style**
    ```python
-   # Recommended
-   from freqdect.fourier_math import compute_fft
-   from freqdect.wavelet_math import dwt_transform
+   # Preferred
+   from vision_utils.preprocessing import transforms
+   
+   # Avoid
+   from ..preprocessing import transforms
    ```
 
-3. **Development Environment**
+3. **Development Setup**
    - Use virtual environments
-   - Install in development mode
-   - Document dependencies in environment.yml
+   - Install package in editable mode
+   - Document dependencies properly
 
 ## Key Learnings
 
-1. Python's module system requires proper package structure
-2. PYTHONPATH management is crucial for development
-3. Multiple solutions exist for different use cases
-4. Consistent import patterns improve maintainability
+1. Understanding Python's import system is crucial
+2. Project structure affects import behavior
+3. Multiple solutions exist for different scenarios
+4. Standardized practices improve collaboration
 
 ## Future Considerations
 
-- Implementing automated environment setup
-- Creating comprehensive documentation
-- Standardizing development practices
-- Setting up CI/CD pipelines
-
-## Conclusion
-
-Understanding Python's import system and implementing proper solutions can significantly improve development workflow in complex scientific computing projects. The key is maintaining a clean project structure and following consistent import patterns.
-
-## Resources
-
-- Python Packaging Guide
-- Scientific Python Development Guide
-- Virtual Environment Best Practices
-- Modern Python Project Structure
-
-*Note: This guide uses a frequency analysis project as an example, but the principles apply to any Python project with similar complexity.*
-
-Citations:
-[1] https://pplx-res.cloudinary.com/image/upload/v1731653131/user_uploads/lhdebfjwa/image.jpg
+- Implementing CI/CD pipelines
+- Automating environment setup
+- Creating developer documentation
+- Containerizing development environment

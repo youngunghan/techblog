@@ -1,95 +1,96 @@
-# Resolving Python Import Issues: A Practical Guide
-
-## Introduction
-
-When developing complex machine learning applications, managing Python imports across different modules can become challenging. This post shares practical solutions for handling import errors in Python projects, using a real-world example from a computer vision application.
+# Fixing Unstable Y-axis Range in Matplotlib Multi-scale Data Visualization
 
 ## Project Structure
 
-```
-vision-ml-project/
-├── src/
-│   └── vision_utils/
-│       ├── __init__.py
-│       ├── preprocessing/
-│       │   ├── __init__.py
-│       │   ├── augmentation.py
-│       │   └── transforms.py
-│       ├── models/
-│       │   ├── __init__.py
-│       │   └── network.py
-│       └── train.py
-├── tests/
-├── setup.py
-└── README.md
+```plaintext
+32shot_fewshot/
+├── 32shot_fewshot_origin_circle_scale_3.0/
+│   ├── output/
+│   │   ├── detection_results_2024_11_06_08_05_57.csv
+│   │   ├── detection_results_2024_11_07_06_49_11.csv
+│   │   └── ...
+│   ├── train/
+│   ├── val/
+│   └── model_checkpoints/
+├── 32shot_fewshot_origin_circle_scale_3.1/
+└── ...
 ```
 
 ## The Challenge
 
-When trying to run the training script directly:
-
-```bash
-python /path/to/vision-ml-project/src/vision_utils/train.py --data-dir /path/to/dataset
-```
-
-We encounter this error:
-```python
-Traceback (most recent call last):
-  File "train.py", line 3, in <module>
-    from vision_utils.preprocessing import transforms
-ModuleNotFoundError: No module named 'vision_utils'
-```
-
-## Root Cause Analysis
-
-**Python's Module Search Behavior:**
-- Python first looks in the directory containing the executed script
-- Then searches through PYTHONPATH directories
-- Finally checks installed packages
-
-When running the script directly, Python cannot find the `vision_utils` package because the `src` directory is not in its search path.
+When dealing with multiple scale experiments:
+1. Each scale folder contains multiple CSV files with detection results
+2. Need to compare performance across different scales
+3. Visualization issues with y-axis stability
+4. Data type inconsistencies affecting plot reliability
 
 ## Solution Implementation
 
-### Method 1: Using PYTHONPATH
-```bash
-export PYTHONPATH="/path/to/vision-ml-project/src:$PYTHONPATH"
-python src/vision_utils/train.py --data-dir /path/to/dataset
+### 1. Data Loading and Processing
+
+```python
+def load_scale_results(base_path):
+    """
+    Load first detection results from each scale folder
+    """
+    scale_results = []
+    scale_folders = glob.glob(os.path.join(base_path, "*scale*"))
+    
+    for folder in scale_folders:
+        scale = float(re.search(r'scale_(\d+\.\d+)', folder).group(1))
+        csv_files = glob.glob(os.path.join(folder, "output", "*.csv"))
+        
+        if csv_files:
+            df = pd.read_csv(csv_files[0])
+            scale_results.append({
+                'scale': scale,
+                'data': df
+            })
+    
+    return sorted(scale_results, key=lambda x: x['scale'])
 ```
 
-### Method 2: Module-style Execution
-```bash
-python -m vision_utils.train --data-dir /path/to/dataset
+### 2. Visualization with Stable Y-axis
+
+```python
+def plot_scale_comparison(scale_results, methods):
+    plt.figure(figsize=(15, 8))
+    
+    # Fix y-axis range first
+    plt.ylim(0, 100)
+    
+    colors = plt.cm.rainbow(np.linspace(0, 1, len(scale_results)))
+    x = np.arange(len(methods))
+    width = 0.8 / len(scale_results)
+    
+    for idx, data in enumerate(scale_results):
+        scale = data['scale']
+        # Ensure numeric conversion
+        accuracies = pd.to_numeric(data['data']['acc'][1:9])
+        
+        x_pos = x - (0.4 - width/2) + (idx * width)
+        plt.bar(x_pos, accuracies, width, 
+               label=f'Scale {scale}', 
+               color=colors[idx], 
+               alpha=0.7)
+    
+    plt.xlabel('Methods', fontsize=12)
+    plt.ylabel('Accuracy (%)', fontsize=12)
+    plt.title('Model Performance Across Different Scales')
+    plt.xticks(x, methods, rotation=45)
+    plt.legend(bbox_to_anchor=(1.05, 1))
+    plt.grid(axis='y', linestyle='--', alpha=0.7)
+    plt.tight_layout()
 ```
-
-### Method 3: Development Installation
-```bash
-# From project root
-pip install -e .
-```
-
-## Best Practices
-
-1. **Project Structure**
-   - Keep all source code under `src/`
-   - Use meaningful package names
-   - Include `__init__.py` files
-
-2. **Import Style**
-   ```python
-   # Preferred
-   from vision_utils.preprocessing import transforms
-   
-   # Avoid
-   from ..preprocessing import transforms
-   ```
-
-3. **Development Setup**
-   - Use virtual environments
-   - Install package in editable mode
-   - Document dependencies properly
 
 ## Key Learnings
 
-1. Understanding Python's import system is crucial
-2. Project structure affects import behavior
+1. **Data Type Consistency**
+   - Always convert string data to numeric using `pd.to_numeric()`
+   - Handle missing values appropriately
+
+2. **Plot Stability**
+   - Set y-axis limits before plotting
+   - Use consistent color schemes
+   - Proper layout management
+---
