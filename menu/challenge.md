@@ -107,13 +107,15 @@ details[open] .course-toggle {
 <details class="course-item in-progress">
   <summary>
     <span class="course-toggle">▶</span>
-    <span>Deep Learning</span>
+    <span>Mathematical Foundations of Deep Neural Networks</span>
     <span class="course-status">IN PROGRESS</span>
   </summary>
   <div class="course-content">
     <ul>
-      <li><strong>Course Page:</strong> <a href="https://ernestryu.com/courses/deep_learning.html" target="_blank">Deep Learning Course</a></li>
+      <li><strong>University:</strong> Seoul National University (서울대학교)</li>
+      <li><strong>Semester:</strong> Spring 2024</li>
       <li><strong>Instructor:</strong> Ernest Ryu</li>
+      <li><strong>Course Page:</strong> <a href="https://ernestryu.com/courses/deep_learning.html" target="_blank">Course Website</a></li>
       <li><strong>Assignments:</strong> <a href="#" target="_blank">Google Drive Folder</a> <em>(Coming soon)</em></li>
       <li><strong>Topics:</strong> Neural Networks, Backpropagation, CNNs, RNNs, Transformers</li>
     </ul>
@@ -128,8 +130,10 @@ details[open] .course-toggle {
   </summary>
   <div class="course-content">
     <ul>
+      <li><strong>University:</strong> University of Michigan (미시간 대학교)</li>
+      <li><strong>Semester:</strong> Fall 2020</li>
+      <li><strong>Instructor:</strong> Justin Johnson</li>
       <li><strong>Course Page:</strong> <a href="https://web.eecs.umich.edu/~justincj/teaching/eecs498/FA2020/" target="_blank">EECS 498-007 / 598-005</a></li>
-      <li><strong>Instructor:</strong> Justin Johnson (University of Michigan)</li>
       <li><strong>Video Lectures:</strong> <a href="https://www.youtube.com/playlist?list=PL5-TkQAfAZFbzxjBHtzdVCWE0Zbhomg7r" target="_blank">YouTube Playlist</a></li>
       <li><strong>Assignments:</strong> <a href="#" target="_blank">Google Drive Folder</a> <em>(Coming soon)</em></li>
       <li><strong>Topics:</strong> Image Classification, Object Detection, Segmentation, GANs, 3D Vision</li>
