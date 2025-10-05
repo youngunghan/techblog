@@ -1,4 +1,4 @@
-# MIT Challenge
+# AI Challenge
 
 Inspired by [Scott Young's MIT Challenge](https://www.scotthyoung.com/blog/myprojects/mit-challenge-2/)
 
@@ -91,7 +91,7 @@ details[open] .course-toggle {
 .course-content strong {
   color: #2d9da8;
   display: inline-block;
-  min-width: 100px;
+  min-width: 120px;
 }
 
 .rating-badge {
@@ -104,100 +104,18 @@ details[open] .course-toggle {
 }
 </style>
 
-<details class="course-item completed">
-  <summary>
-    <span class="course-toggle">▶</span>
-    <span>8.01: Physics I – Classical Mechanics</span>
-    <span class="course-status">COMPLETED</span>
-  </summary>
-  <div class="course-content">
-    <ul>
-      <li><strong>Course:</strong> <a href="https://ocw.mit.edu/courses/8-01-physics-i-classical-mechanics-fall-1999/" target="_blank">MIT OCW</a></li>
-      <li><strong>Video:</strong> <a href="https://www.youtube.com/playlist?list=PLUl4u3cNGP62QZp1G0Y2bKpL6R3F0bF1O" target="_blank">Walter Lewin Lectures</a></li>
-      <li><strong>Rating:</strong> <span class="rating-badge">5/5</span></li>
-    </ul>
-  </div>
-</details>
-
-<details class="course-item completed">
-  <summary>
-    <span class="course-toggle">▶</span>
-    <span>18.01: Single Variable Calculus</span>
-    <span class="course-status">COMPLETED</span>
-  </summary>
-  <div class="course-content">
-    <ul>
-      <li><strong>Course:</strong> <a href="https://ocw.mit.edu/courses/18-01-single-variable-calculus-fall-2006/" target="_blank">MIT OCW</a></li>
-      <li><strong>Rating:</strong> <span class="rating-badge">5/5</span></li>
-    </ul>
-  </div>
-</details>
-
-<details class="course-item completed">
-  <summary>
-    <span class="course-toggle">▶</span>
-    <span>18.02: Multi-Variable Calculus</span>
-    <span class="course-status">COMPLETED</span>
-  </summary>
-  <div class="course-content">
-    <ul>
-      <li><strong>Course:</strong> <a href="https://ocw.mit.edu/courses/18-02-multivariable-calculus-fall-2007/" target="_blank">MIT OCW</a></li>
-      <li><strong>Rating:</strong> <span class="rating-badge">4/5</span></li>
-    </ul>
-  </div>
-</details>
-
-<details class="course-item completed">
-  <summary>
-    <span class="course-toggle">▶</span>
-    <span>8.02: Physics II – Electromagnetism</span>
-    <span class="course-status">COMPLETED</span>
-  </summary>
-  <div class="course-content">
-    <ul>
-      <li><strong>Course:</strong> <a href="https://ocw.mit.edu/courses/8-02-physics-ii-electricity-and-magnetism-spring-2007/" target="_blank">MIT OCW</a></li>
-      <li><strong>Rating:</strong> <span class="rating-badge">5/5</span></li>
-    </ul>
-  </div>
-</details>
-
-<details class="course-item completed">
-  <summary>
-    <span class="course-toggle">▶</span>
-    <span>5.111: Principles of Chemical Science</span>
-    <span class="course-status">COMPLETED</span>
-  </summary>
-  <div class="course-content">
-    <ul>
-      <li><strong>Course:</strong> <a href="https://ocw.mit.edu/courses/5-111-principles-of-chemical-science-fall-2008/" target="_blank">MIT OCW</a></li>
-      <li><strong>Rating:</strong> <span class="rating-badge">4/5</span></li>
-    </ul>
-  </div>
-</details>
-
-<details class="course-item completed">
-  <summary>
-    <span class="course-toggle">▶</span>
-    <span>7.012: Introduction to Biology</span>
-    <span class="course-status">COMPLETED</span>
-  </summary>
-  <div class="course-content">
-    <ul>
-      <li><strong>Course:</strong> <a href="https://ocw.mit.edu/courses/7-012-introduction-to-biology-fall-2004/" target="_blank">MIT OCW</a></li>
-      <li><strong>Rating:</strong> <span class="rating-badge">4/5</span></li>
-    </ul>
-  </div>
-</details>
-
 <details class="course-item in-progress">
   <summary>
     <span class="course-toggle">▶</span>
-    <span>6.01: Introduction to EE and CS I</span>
+    <span>Deep Learning</span>
     <span class="course-status">IN PROGRESS</span>
   </summary>
   <div class="course-content">
     <ul>
-      <li><strong>Course:</strong> <a href="https://ocw.mit.edu/courses/6-01-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/" target="_blank">MIT OCW</a></li>
+      <li><strong>Course Page:</strong> <a href="https://ernestryu.com/courses/deep_learning.html" target="_blank">Deep Learning Course</a></li>
+      <li><strong>Instructor:</strong> Ernest Ryu</li>
+      <li><strong>Assignments:</strong> <a href="#" target="_blank">Google Drive Folder</a> <em>(Coming soon)</em></li>
+      <li><strong>Topics:</strong> Neural Networks, Backpropagation, CNNs, RNNs, Transformers</li>
     </ul>
   </div>
 </details>
@@ -205,54 +123,16 @@ details[open] .course-toggle {
 <details class="course-item not-started">
   <summary>
     <span class="course-toggle">▶</span>
-    <span>6.02: Introduction to EE and CS II</span>
+    <span>EECS 498: Deep Learning for Computer Vision</span>
     <span class="course-status">PLANNED</span>
   </summary>
   <div class="course-content">
     <ul>
-      <li><strong>Course:</strong> <a href="https://ocw.mit.edu/courses/6-02-introduction-to-electrical-engineering-and-computer-science-ii-spring-2012/" target="_blank">MIT OCW</a></li>
-    </ul>
-  </div>
-</details>
-
-<details class="course-item completed">
-  <summary>
-    <span class="course-toggle">▶</span>
-    <span>6.006: Introduction to Algorithms</span>
-    <span class="course-status">COMPLETED</span>
-  </summary>
-  <div class="course-content">
-    <ul>
-      <li><strong>Course:</strong> <a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/" target="_blank">MIT OCW</a></li>
-      <li><strong>Rating:</strong> <span class="rating-badge">5/5</span></li>
-    </ul>
-  </div>
-</details>
-
-<details class="course-item completed">
-  <summary>
-    <span class="course-toggle">▶</span>
-    <span>18.03: Differential Equations</span>
-    <span class="course-status">COMPLETED</span>
-  </summary>
-  <div class="course-content">
-    <ul>
-      <li><strong>Course:</strong> <a href="https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/" target="_blank">MIT OCW</a></li>
-      <li><strong>Rating:</strong> <span class="rating-badge">4/5</span></li>
-    </ul>
-  </div>
-</details>
-
-<details class="course-item completed">
-  <summary>
-    <span class="course-toggle">▶</span>
-    <span>6.042J: Mathematics for Computer Science</span>
-    <span class="course-status">COMPLETED</span>
-  </summary>
-  <div class="course-content">
-    <ul>
-      <li><strong>Course:</strong> <a href="https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/" target="_blank">MIT OCW</a></li>
-      <li><strong>Rating:</strong> <span class="rating-badge">5/5</span></li>
+      <li><strong>Course Page:</strong> <a href="https://web.eecs.umich.edu/~justincj/teaching/eecs498/FA2020/" target="_blank">EECS 498-007 / 598-005</a></li>
+      <li><strong>Instructor:</strong> Justin Johnson (University of Michigan)</li>
+      <li><strong>Video Lectures:</strong> <a href="https://www.youtube.com/playlist?list=PL5-TkQAfAZFbzxjBHtzdVCWE0Zbhomg7r" target="_blank">YouTube Playlist</a></li>
+      <li><strong>Assignments:</strong> <a href="#" target="_blank">Google Drive Folder</a> <em>(Coming soon)</em></li>
+      <li><strong>Topics:</strong> Image Classification, Object Detection, Segmentation, GANs, 3D Vision</li>
     </ul>
   </div>
 </details>
