@@ -1,21 +1,104 @@
-# about
+# About
 
-* hello world a
-* hello world a
-* hello world a
+## Who Am I?
 
-법관이 중대한 심신상의 장해로 직무를 수행할 수 없을 때에는 법률이 정하는 바에 의하여 퇴직하게 할 수 있다. 타인의 범죄행위로 인하여 생명·신체에 대한 피해를 받은 국민은 법률이 정하는 바에 의하여 국가로부터 구조를 받을 수 있다.
+I'm a multidisciplinary researcher and enthusiast with a passion for **Computer Science**, **Artificial Intelligence**, and **Railroad Science**. Currently undertaking an AI Challenge inspired by Scott Young's MIT Challenge, while exploring the fascinating intersection of technology and railway systems.
 
-행정권은 대통령을 수반으로 하는 정부에 속한다. 국가의 세입·세출의 결산, 국가 및 법률이 정한 단체의 회계검사와 행정기관 및 공무원의 직무에 관한 감찰을 하기 위하여 대통령 소속하에 감사원을 둔다.
+---
 
-| Header 1 | Header 2 | Header 3 |
-|----------|----------|----------|
-| Row 1 Col 1 | Row 1 Col 2 | Row 1 Col 3 |
-| Row 2 Col 1 | Row 2 Col 2 | Row 2 Col 3 |
-| Row 3 Col 1 | Row 3 Col 2 | Row 3 Col 3 |
+## Research Interests
 
-```python
-print('helllo world test')
-for i in range(10):
-    print(i)
-```
+### 🤖 Artificial Intelligence & Machine Learning
+Deep learning, computer vision, and neural networks fascinate me. I'm particularly interested in how AI can be applied to solve real-world problems in transportation and infrastructure systems.
+
+**Current Focus:**
+- Deep Learning architectures (CNNs, RNNs, Transformers)
+- Computer Vision for object detection and segmentation
+- Applications of AI in transportation systems
+
+### 💻 Computer Science
+Building robust systems and understanding computational principles drive my technical work. I believe in writing clean, efficient code and understanding the fundamentals.
+
+**Areas of Interest:**
+- Algorithms and Data Structures
+- Software Engineering best practices
+- System design and optimization
+
+### 🚄 Railroad Science
+Railways represent one of humanity's most sophisticated transportation systems, combining engineering, operations research, and systems thinking. I'm fascinated by:
+
+**Technical Aspects:**
+- Railway signaling systems and control theory
+- Train dynamics and traction systems
+- Railway infrastructure optimization
+
+**AI × Railways:**
+- Predictive maintenance using ML
+- Computer vision for railway inspection
+- Optimization algorithms for scheduling and routing
+- Autonomous train control systems
+
+---
+
+## Why This Unique Combination?
+
+The convergence of **AI and Railway Systems** presents incredible opportunities:
+
+- 🔍 **Automated Inspection**: Using computer vision to detect track defects, overhead line issues, and structural problems
+- 🎯 **Predictive Maintenance**: ML models to predict equipment failures before they occur
+- 📊 **Traffic Optimization**: AI-driven scheduling to maximize capacity and minimize delays
+- 🤖 **Autonomous Operations**: Advancing towards higher levels of train automation
+- 🌐 **Smart Infrastructure**: IoT sensors combined with AI for real-time monitoring
+
+Railways generate massive amounts of data, making them an ideal testbed for advanced AI applications while contributing to sustainable transportation.
+
+---
+
+## Learning Philosophy
+
+> "The intersection of different fields creates the most innovative solutions."
+
+I believe in:
+- **Interdisciplinary thinking**: Applying CS/AI concepts to railway engineering
+- **Learning by doing**: Building projects and completing challenging assignments
+- **Open knowledge**: Sharing insights to help others and advance the field
+- **Practical impact**: Focusing on technologies that can improve real systems
+
+---
+
+## Current Projects
+
+### AI Challenge
+Completing comprehensive Deep Learning and Computer Vision courses with all assignments, building a strong foundation for applied work.
+
+### Railway Applications (Planned)
+- Track defect detection using computer vision
+- Railway traffic simulation and optimization
+- Predictive maintenance models for rolling stock
+
+---
+
+## Background
+
+**Education & Skills:**
+- Computer Science and AI (Self-directed learning)
+- Railway Engineering principles
+- Python, PyTorch, TensorFlow
+- Railway simulation tools
+
+**Vision:**  
+Contributing to the next generation of intelligent railway systems by bridging the gap between cutting-edge AI research and practical railway applications.
+
+---
+
+## Why This Blog?
+
+This space serves as:
+1. 📚 **Learning Journal**: Documenting my AI Challenge progress
+2. �� **Railway Tech Hub**: Exploring AI applications in railways
+3. 💡 **Knowledge Sharing**: Tutorials and insights for others
+4. 🎯 **Portfolio**: Showcasing projects at the intersection of AI and railways
+
+---
+
+*"The future of transportation is intelligent, sustainable, and runs on rails."*
