@@ -8,7 +8,7 @@ I'm a multidisciplinary researcher and enthusiast with a passion for **Computer 
 
 ## Research Interests
 
-### 🤖 Artificial Intelligence
+### � Artificial Intelligence
 Deep learning, computer vision, NLP, and generative models fascinate me. I'm particularly interested in how AI can be applied to solve real-world problems in transportation and infrastructure systems.
 
 **Current Focus:**
