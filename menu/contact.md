@@ -32,10 +32,10 @@
 }
 </style>
 
-<a href="../img/user/한영웅_CV_250929.pdf" download class="download-link">📄 Download CV (PDF)</a>
+<a href="https://youngunghan.github.io/techblog/img/user/한영웅_CV_250929.pdf" download class="download-link">📄 Download CV (PDF)</a>
 
 <div class="pdf-container">
-  <iframe src="../img/user/한영웅_CV_250929.pdf" type="application/pdf">
-    <p>Your browser does not support PDFs. <a href="../img/user/한영웅_CV_250929.pdf">Download the PDF</a>.</p>
+  <iframe src="https://youngunghan.github.io/techblog/img/user/한영웅_CV_250929.pdf" type="application/pdf">
+    <p>Your browser does not support PDFs. <a href="https://youngunghan.github.io/techblog/img/user/한영웅_CV_250929.pdf">Download the PDF</a>.</p>
   </iframe>
 </div>

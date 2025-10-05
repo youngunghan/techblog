@@ -8,12 +8,14 @@ I'm a multidisciplinary researcher and enthusiast with a passion for **Computer 
 
 ## Research Interests
 
-### 🤖 Artificial Intelligence & Machine Learning
-Deep learning, computer vision, and neural networks fascinate me. I'm particularly interested in how AI can be applied to solve real-world problems in transportation and infrastructure systems.
+### 🤖 Artificial Intelligence
+Deep learning, computer vision, NLP, and generative models fascinate me. I'm particularly interested in how AI can be applied to solve real-world problems in transportation and infrastructure systems.
 
 **Current Focus:**
 - Deep Learning architectures (CNNs, RNNs, Transformers)
 - Computer Vision for object detection and segmentation
+- Natural Language Processing (NLP) and Large Language Models (LLMs)
+- Diffusion Models and generative AI
 - Applications of AI in transportation systems
 
 ### 💻 Computer Science
